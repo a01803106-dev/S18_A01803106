@@ -1,0 +1,90 @@
+temp = [20,30,21,26,27,31,36]
+print(sum(temp))
+
+temp = [20,30,21,26,27,31,36]
+media= sum (temp) / len(temp)
+print(media)
+
+for i in temp:
+    if i > media:
+        print(i, "sobre el promedio")
+    else:
+        print(i, "bajo al promedio")
+
+
+
+
+nombres = ["Luis", "Ana", "Pedro", "María", "Juan"]
+notas = [85, 60, 45, 90, 70]
+
+prom_clase = sum(notas) / len(notas)
+print("Promedio del grupo:", prom_clase)
+
+reprobados = []
+for i in range(len(nombres)):
+    if notas[i] < 70:
+        reprobados.append(nombres[i])
+
+print("Alumnos reprobados:", reprobados)
+
+aprobados = len(nombres) - len(reprobados)
+porcentaje = (aprobados * 100) / len(nombres)
+print("Aprobados:", porcentaje, "%")
+
+
+
+
+lista = ["pan", "leche", "huevos"]
+
+for i in range(len(lista)):
+    ans = input("¿Compraste " + lista[i] + "? (si/no): ")
+    if ans == "si":
+        lista[i] = lista[i] + " ✔"
+
+print("Estado de la lista:")
+for prod in lista:
+    print(prod)
+
+
+
+
+
+nums = [8, 3, 15, 2, 10, 7]
+print("Número mayor:", max(nums))
+print("Número menor:", min(nums))
+print("Ordenados de menor a mayor:", sorted(nums))
+
+
+
+
+
+lista_num = [1,2,3,4,5,6,7,8,9]
+pares = []
+impares = []
+
+for num in lista_num:
+    if num % 2 == 0:
+        pares.append(num)
+    else:
+        impares.append(num)
+
+print("Lista pares:", pares)
+print("Lista impares:", impares)
+
+
+
+
+
+users = ["Ana", "Luis", "Pedro"]
+
+nuevo = input("Pon un nombre de usuario: ")
+
+while nuevo in users:
+    print("Ese ya existe, intenta otro")
+    nuevo = input("Escribe un usuario diferente: ")
+
+users.append(nuevo)
+print("Usuario agregado:", nuevo)
+print("Usuarios ahora:", users)
+
+
